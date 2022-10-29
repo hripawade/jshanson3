@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Javascript 3</title>
+</head>
+<body>
+    <h1>JS Question - 3</h1>
+
+    <b>Ques 1. Find the number of digits</b><br>
+    <pre><b> Ans.</b>
+        const Find_Digits = (N) => 
+      {
+	   let count = 0;
+      while (N !== 0)
+      {
+      N = parseInt(N / 10);
+      count++;
+      }
+      return count;
+    };
+    </pre>
+
+    <b>Ques 2. Find the Fives.</b><br>
+    <pre><b> Ans.</b>
+        const Find_Five = (N) => 
+     {
+	 let count=0
+	 let digit 
+          while(N!=0){
+            digit=N%10;
+              N=parseInt(N/10)
+            if(digit==5){
+        count=count+1;
+        }
+      }
+        return count;
+    };
+    </pre>
+
+    <b>Ques 3.Find Sum</b><br>
+    <pre><b> Ans.</b>
+        const findSum = (n) => {
+            let sum=0
+                   let item=2
+                   while(item<=n){
+                   sum=sum+item;
+                   item+=2;
+              }
+                return sum;
+        };
+    </pre>
+
+    <b>Ques 4.Find the sum of the digits of a given number.</b><br>
+    <pre><b> Ans.</b>
+        const Number_Sum = (N) => 
+   {
+	 let sum=0
+        while(N!==0){
+          let digit=N%10
+           N=parseInt(N/10)
+       sum=sum+digit;
+   }
+    return sum;
+  };   
+    </pre>
+    
+    <b>Ques 5.Print the Odds.</b><br>
+    <pre><b> Ans.</b>
+        const Print_Odd = (N) => 
+     {
+	  console.log('2')
+                let num=3;
+             while(num<=N){
+              console.log(num)
+                num+=2
+             }
+     };
+    </pre>
+
+    <b>Ques 6.Print the Pattern.</b><br>
+    <pre><b> Ans.</b>
+        const Print_pattern = (N) => 
+     {
+     let i,j;
+        for(i=0;i< N;i++){
+         let result=''
+          for(j=0;j<=i;j++){
+           result=result+'*'
+            }
+            console.log(result)
+       }
+     };
+    </pre>
+
+    <b>Ques 7.Check whether a Number is a prime or not.</b><br>
+    <pre><b> Ans.</b>
+        const Prime_Check = (N) => 
+      {
+	    if (N <= 1) return 'NO';
+            if (N == 2) return 'YES';
+          
+            for (let i = 2; i <= N / 2; i++) {
+            if (N % i === 0) {
+                return 'NO';
+              }
+            }
+            return 'YES';
+	
+      };
+    </pre>
+
+    <b>Ques 8.Print Numbers</b><br>
+    <pre><b> Ans.</b>
+        const printNumbers = (n) => {
+            var ing='';
+                   for(let i=1;i<=n;i++){
+                     ing=ing+i+' ';
+                   }
+                   console.log(ing);
+       };
+    </pre>
+    
+    <b>Ques 9.Print the Table</b><br>
+    <pre><b> Ans.</b>
+        const Print_Table = (N) => 
+     {
+	     let tab='';
+         for(let i=1;i<=10;i++){
+           tab=N+' '+'*'+' '+i+' '+ '=' +' '+ N*i;
+           console.log(tab);
+       }
+     };
+    </pre>
+</body>
+</html>
